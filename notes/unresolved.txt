@@ -1,0 +1,102 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkedWithCnt | breakout.so
+MWorld | breakout.so
+NetGlob | breakout.so
+TopGash | breakout.so
+WhoWeArePlaying | breakout.so
+GetPackets(char*, int) | breakout.so
+SendPacket(char*) | breakout.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | breakout.so
+IsScreenTouched() | breakout.so
+Card_LinkWaitForAll(unsigned long) | breakout.so
+MeritthonDisplayRound(int, int, int, unsigned long) | breakout.so
+DoParse(char*, bool) | breakout.so
+GetMyId() | breakout.so
+PlayWave(char*, unsigned short, int, int, int, bool) | breakout.so
+QueFlush(bool) | breakout.so
+GetMaster() | breakout.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | breakout.so
+Translator::LoadTranslations(xml_gameinfo::GameIds) | breakout.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | breakout.so
+WorldClass::ShowAll() | breakout.so
+WorldClass::GetFrame(Bitmap*, int) | breakout.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | breakout.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | breakout.so
+OneBmpTimer::SetTimeLeft(int) | breakout.so
+OneBmpTimer::Halt() | breakout.so
+OneBmpTimer::Resume() | breakout.so
+OneBmpTimer::TimeLeft() | breakout.so
+system_info::SystemInfo::GetInstance() | breakout.so
+system_info::SystemInfo::IsPlatformForce() | breakout.so
+ScoreDisplay::Set(int) | breakout.so
+ScoreDisplay::Increase(int) | breakout.so
+SpriteSignal::SpriteSignal(Group::SpriteSignalType, Sprite*, Sprite*, Gash*) | breakout.so
+SpriteSigHand::SpriteSigHand() | breakout.so
+LinuxGameClass::CheckHotKey(char) | breakout.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | breakout.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | breakout.so
+MyMeritManager::Instance() | breakout.so
+LinuxWorldClass::LinuxWorldClass(bool) | breakout.so
+HighScoresManager::LowestScore(int) | breakout.so
+Gash::LocateSprite(char*, char*) | breakout.so
+List::Push(Group*) | breakout.so
+List::Clear(unsigned char) | breakout.so
+List::IsEmpty() | breakout.so
+List::List(List*) | breakout.so
+Group::Signal(Group::SpriteSignalType) | breakout.so
+Group::Signal(SpriteSignal*) | breakout.so
+Group::Message(Group::SpriteSignalType) | breakout.so
+Group::Message(SpriteSignal*) | breakout.so
+Group::Group(List*, Group*) | breakout.so
+Group::~Group() | breakout.so
+USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | breakout.so
+USBIO::JoystickFound() | breakout.so
+Bitmap::NextAnim() | breakout.so
+Sprite::DoNextFrame() | breakout.so
+Sprite::SpriteClick() | breakout.so
+Sprite::AssignString(String*, unsigned long) | breakout.so
+Sprite::ChangeString(char const*, unsigned long) | breakout.so
+Sprite::LastEventTime() | breakout.so
+Sprite::DeleteAfterLast(unsigned long) | breakout.so
+Sprite::EnableAllClicks(unsigned long) | breakout.so
+Sprite::DisableAllClicks(unsigned long) | breakout.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | breakout.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | breakout.so
+Sprite::Reset() | breakout.so
+Sprite::Scale(float, float, unsigned long, unsigned long, unsigned char) | breakout.so
+Sprite::DoDraw() | breakout.so
+Sprite::Enable(unsigned long) | breakout.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | breakout.so
+Sprite::SetBmp(Bitmap*, unsigned long) | breakout.so
+Sprite::Signal(Group::SpriteSignalType) | breakout.so
+Sprite::Signal(SpriteSignal*) | breakout.so
+Sprite::ColorIt(int, int, int, int, int, int, int, int, int, unsigned long) | breakout.so
+Sprite::Disable(unsigned long, bool) | breakout.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | breakout.so
+Sprite::Message(Group::SpriteSignalType) | breakout.so
+Sprite::Message(SpriteSignal*) | breakout.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | breakout.so
+Sprite::SetCord(float, float, float, unsigned long) | breakout.so
+Sprite::SetSize(int, int) | breakout.so
+Sprite::SetAlpha(int, unsigned long) | breakout.so
+Sprite::DoCommand(int) | breakout.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | breakout.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | breakout.so
+Sprite::~Sprite() | breakout.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | breakout.so
+NetSprite::SendPacket(unsigned char) | breakout.so
+NetSprite::NetSprite(Bitmap*, unsigned short, unsigned char, unsigned short) | breakout.so
+NetSprite::~NetSprite() | breakout.so
+MyMeritManager::PlayerLoaded() const | breakout.so
+MyMeritManager::Name() const | breakout.so
+typeinfo for SpriteSigHand | breakout.so
+typeinfo for Group | breakout.so
+typeinfo for Sprite | breakout.so
+typeinfo for NetSprite | breakout.so
+vtable for SpriteSigHand | breakout.so
+key | breakout.so
+ustrzcpy | breakout.so
+uszprintf | breakout.so
